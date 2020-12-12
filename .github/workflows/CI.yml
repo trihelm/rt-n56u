@@ -74,7 +74,6 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MTR/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SOCAT/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SRELAY/d' .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE/d' .config
 
         echo "CONFIG_FIRMWARE_INCLUDE_UVC=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_AUDIO=n" >> .config
@@ -97,7 +96,6 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_MTR=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y" >> .config
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
         #########################################################################################
